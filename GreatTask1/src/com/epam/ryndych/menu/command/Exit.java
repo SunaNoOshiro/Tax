@@ -7,7 +7,7 @@ public class Exit implements Command {
 
 	@Override
 	public void execute() {
-		Main.LOG.info("Executing command 'exit' ");
+		Main.LOG.info("exit command execute ");
 		System.exit(0);
 	}
 

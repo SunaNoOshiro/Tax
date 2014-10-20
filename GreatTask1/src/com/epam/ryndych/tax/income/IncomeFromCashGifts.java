@@ -1,19 +1,29 @@
 package com.epam.ryndych.tax.income;
 
+import com.epam.ryndych.Main;
 import com.epam.ryndych.tax.Tax;
 
 public class IncomeFromCashGifts extends Income {
 	private boolean isfamily = true;
 
 	public IncomeFromCashGifts(float profit) {
+		Main.LOG.info("IncomeFromCashGifts create");
 		this.profit = profit;
 		calculateTax();
 	}
 
 	public IncomeFromCashGifts(float profit, boolean isResident,
 			boolean isfamily) {
+		Main.LOG.info("IncomeFromCashGifts create");
 		this.profit = profit;
 		this.isResident = isResident;
+		this.isfamily = isfamily;
+		calculateTax();
+	}
+
+	public IncomeFromCashGifts(float profit, boolean isfamily) {
+		Main.LOG.info("IncomeFromCashGifts create");
+		this.profit = profit;
 		this.isfamily = isfamily;
 		calculateTax();
 	}
@@ -23,7 +33,7 @@ public class IncomeFromCashGifts extends Income {
 		if (isfamily) {
 			taxRate = 0;
 		} else {
-			taxRate = 0.05f;
+			taxRate = profit * 0.05f;
 		}
 	}
 

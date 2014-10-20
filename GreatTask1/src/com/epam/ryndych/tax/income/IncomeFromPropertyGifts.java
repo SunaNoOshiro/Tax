@@ -1,19 +1,29 @@
 package com.epam.ryndych.tax.income;
 
+import com.epam.ryndych.Main;
 import com.epam.ryndych.tax.Tax;
 
-public class IncomeFromPropertyGift extends Income {
+public class IncomeFromPropertyGifts extends Income {
 	private boolean isfamily = true;
 
-	public IncomeFromPropertyGift(float profit) {
+	public IncomeFromPropertyGifts(float profit) {
+		Main.LOG.info("IncomeFromPropertyGifts create");
 		this.profit = profit;
 		calculateTax();
 	}
 
-	public IncomeFromPropertyGift(float profit, boolean isResident,
+	public IncomeFromPropertyGifts(float profit, boolean isResident,
 			boolean isfamily) {
+		Main.LOG.info("IncomeFromPropertyGifts create");
 		this.profit = profit;
 		this.isResident = isResident;
+		this.isfamily = isfamily;
+		calculateTax();
+	}
+
+	public IncomeFromPropertyGifts(float profit, boolean isfamily) {
+		Main.LOG.info("IncomeFromPropertyGifts create");
+		this.profit = profit;
 		this.isfamily = isfamily;
 		calculateTax();
 	}

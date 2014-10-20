@@ -1,7 +1,9 @@
 package com.epam.ryndych.tax.income;
 
+import java.util.Comparator;
 import java.util.Date;
 
+import com.epam.ryndych.Main;
 import com.epam.ryndych.tax.Tax;
 
 public class IncomeFromSaleOfProperty extends Income {
@@ -9,21 +11,22 @@ public class IncomeFromSaleOfProperty extends Income {
 	private float area = 120;
 	private Date dateOfPurchase = new Date();
 
-	public IncomeFromSaleOfProperty(float price, float area,
-			boolean isResident, Date dateOfPurchase) {
+	public IncomeFromSaleOfProperty(float price, float area, boolean isResident) {
+		Main.LOG.info("IncomeFromSaleOfProperty create");
 		this.price = price;
 		this.area = area;
 		this.isResident = isResident;
-		this.dateOfPurchase = dateOfPurchase;
 		calculateTax();
 	}
 
 	public IncomeFromSaleOfProperty(float profit) {
+		Main.LOG.info("IncomeFromSaleOfProperty create");
 		this.profit = profit;
 		calculateTax();
 	}
 
 	public IncomeFromSaleOfProperty(float profit, boolean isResident) {
+		Main.LOG.info("IncomeFromSaleOfProperty create");
 		this.profit = profit;
 		this.isResident = isResident;
 		calculateTax();
@@ -31,7 +34,6 @@ public class IncomeFromSaleOfProperty extends Income {
 
 	@Override
 	protected void calculateForResident() {
-
 		if (profit == 0) {
 			if (dateOfPurchase.before(new Date(2004, 1, 1))) {
 				if (area > 120) {
@@ -50,17 +52,20 @@ public class IncomeFromSaleOfProperty extends Income {
 			}
 
 		} else {
-			taxRate = profit * 0.13f;
+			taxRate = price * 0.13f;
 		}
 	}
 
 	@Override
 	protected void calculateForNonResident() {
-		if (profit > 10 * Tax.MIN_WAGE) {
+		if (profit == 0) {
+			taxRate = price * 0.17f;
+		} else if (profit > 10 * Tax.MIN_WAGE) {
 			taxRate = profit * 0.17f;
 		} else {
 			taxRate = profit * 0.15f;
 		}
+
 	}
 
 	@Override

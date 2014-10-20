@@ -6,7 +6,9 @@ import java.util.HashMap;
 import com.epam.ryndych.IOWrapper;
 import com.epam.ryndych.menu.command.Command;
 import com.epam.ryndych.menu.command.Exit;
-import com.epam.ryndych.menu.command.Parse;
+import com.epam.ryndych.menu.command.Help;
+import com.epam.ryndych.menu.command.Input;
+import com.epam.ryndych.menu.command.Search;
 
 public class Menu {
 
@@ -16,7 +18,9 @@ public class Menu {
 	private boolean isIncorrect = false;
 
 	public Menu() {
-		commandList.put(Parse.NAME, new Parse());
+		commandList.put(Help.NAME, new Help());
+		commandList.put(Input.NAME, new Input());
+		commandList.put(Search.NAME, new Search());
 		commandList.put(Exit.NAME, new Exit());
 	}
 
@@ -29,7 +33,7 @@ public class Menu {
 	}
 
 	public void showMenu() {
-		System.out.println("------------------------------");
+		// System.out.println("------------------------------");
 		System.out.println("Options:");
 		for (String i : commandList.keySet()) {
 			System.out.println("\t" + i);
@@ -40,7 +44,7 @@ public class Menu {
 		while (true) {
 			showMenu();
 			String key = in.nextString();
-			System.out.println("------------------------------");
+			// System.out.println("------------------------------");
 			if (commandList.get(key) instanceof Command) {
 				commandList.get(key).execute();
 				isIncorrect = false;

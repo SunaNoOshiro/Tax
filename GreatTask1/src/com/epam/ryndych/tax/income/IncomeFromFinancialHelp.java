@@ -1,12 +1,16 @@
 package com.epam.ryndych.tax.income;
 
+import com.epam.ryndych.Main;
+
 public class IncomeFromFinancialHelp extends Income {
 	public IncomeFromFinancialHelp(float profit) {
+		Main.LOG.info("IncomeFromFinancialHelp create");
 		this.profit = profit;
 		calculateTax();
 	}
 
 	public IncomeFromFinancialHelp(float profit, boolean isResident) {
+		Main.LOG.info("IncomeFromFinancialHelp create");
 		this.profit = profit;
 		this.isResident = isResident;
 		calculateTax();
