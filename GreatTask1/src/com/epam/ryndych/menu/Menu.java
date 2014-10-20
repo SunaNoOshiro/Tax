@@ -8,7 +8,7 @@ import com.epam.ryndych.menu.command.Command;
 import com.epam.ryndych.menu.command.Exit;
 import com.epam.ryndych.menu.command.Help;
 import com.epam.ryndych.menu.command.Input;
-import com.epam.ryndych.menu.command.Search;
+import com.epam.ryndych.menu.command.Read;
 
 public class Menu {
 
@@ -20,7 +20,7 @@ public class Menu {
 	public Menu() {
 		commandList.put(Help.NAME, new Help());
 		commandList.put(Input.NAME, new Input());
-		commandList.put(Search.NAME, new Search());
+		commandList.put(Read.NAME, new Read());
 		commandList.put(Exit.NAME, new Exit());
 	}
 

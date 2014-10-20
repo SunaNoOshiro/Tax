@@ -38,7 +38,7 @@ public class Parse {
 		in = IOWrapper.getInstance();
 	}
 
-	public Taxpayer findTaxpayer() throws IncomeException {
+	public Taxpayer findTaxpayer()  {
 		Main.LOG.info("findTaxpayer() executing");
 		readFromFile();
 		init();
@@ -49,7 +49,7 @@ public class Parse {
 		return currentTaxpayer;
 	}
 
-	public Taxpayer getTaxpayer() throws IncomeException {
+	public Taxpayer getTaxpayer() {
 		Main.LOG.info("getTaxpayer() executing");
 		do {
 		} while (!read());
@@ -70,7 +70,7 @@ public class Parse {
 		return currentTaxpayer;
 	}
 
-	private void createIfHasNotResidentField() throws IncomeException {
+	private void createIfHasNotResidentField() {
 		String isFamilyString;
 		for (String i : list.keySet()) {
 			switch (i.toLowerCase()) {
@@ -127,13 +127,12 @@ public class Parse {
 				break;
 
 			default:
-				throw new IncomeException();
 			}
 		}
 	}
 
 	private void createIfHasResidentField(String isResidentString,
-			boolean isFamily) throws IncomeException {
+			boolean isFamily)  {
 
 		boolean isResident = Boolean.parseBoolean(isResidentString);
 		String areaString = list.get("area");
@@ -188,12 +187,11 @@ public class Parse {
 
 				break;
 			default:
-				throw new IncomeException();
 			}
 		}
 	}
 
-	private void createIncomeObjects() throws IncomeException {
+	private void createIncomeObjects() {
 		listOfIncomes = new ArrayList<Income>();
 		String name = list.get("name");
 		String isResidentString = list.get("isresident");
@@ -226,7 +224,7 @@ public class Parse {
 		return chackToken(tokens);
 	}
 
-	private void init() throws IncomeException {
+	private void init(){
 		Main.LOG.info("init() executing");
 		listOfTaxpayers = new ArrayList<Taxpayer>();
 		for (String s : fromFile) {

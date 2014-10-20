@@ -10,12 +10,9 @@ public class Input implements Command {
 	@Override
 	public void execute() {
 		Main.LOG.info("input command execute");
-		try {
+		
 			new Parse().getTaxpayer();
-		} catch (IncomeException e) {
-			Main.LOG.error(e.getMassage());
-			e.printStackTrace();
-		}
+		
 	}
 
 	@Override
