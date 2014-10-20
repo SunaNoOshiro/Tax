@@ -72,4 +72,10 @@ public class IncomeFromSaleOfProperty extends Income {
 	public String getIncomeType() {
 		return "IncomeFromSaleOfProperty";
 	}
+	@Override
+	public float getProfit() {
+		if(profit==0)
+			return price;
+		else return profit;
+	}
 }

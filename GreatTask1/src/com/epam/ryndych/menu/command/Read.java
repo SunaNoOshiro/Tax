@@ -1,8 +1,7 @@
 package com.epam.ryndych.menu.command;
 
-import com.epam.ryndych.IncomeException;
 import com.epam.ryndych.Main;
-import com.epam.ryndych.menu.Parse;
+import com.epam.ryndych.inout.Parse;
 
 public class Read implements Command {
 	public static final String NAME = "Read";
@@ -10,9 +9,9 @@ public class Read implements Command {
 	@Override
 	public void execute() {
 		Main.LOG.info("search command execute");
-		
-			new Parse().findTaxpayer();
-		
+
+		new Parse().readTaxpayersFromFile();
+
 	}
 
 	@Override

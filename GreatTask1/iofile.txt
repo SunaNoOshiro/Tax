@@ -1,41 +1,18 @@
 
+name=petro mainjob=10000
 
-name=ww mainjob=10000
+name=sergiy additionaljobs=20000
 
-name=qq additionaljobs=20000
+name=andryu mainjob=30000
 
-name=rr mainjob=30000
+name=Vova additionaljobs=40000
 
-name=yyy additionaljobs=40000
+name=guru mainjob=123213
 
-asdasdsda
-asd
-a
-sda
-sd
-as=asd=as=das
-a
-a
+name=grey resident=false mainjob=10000 
 
-asda=asda
+name=wasia mainjob=15654 isresident=false isfamily=false cashgifts=5000
 
-asda
-das
-das
-asddasda=da=sda=sd=as
-asda sdas- as-d- as
-asddas das das= =asd= as=d= as=d =as
-dasd= as=d =asd= a=sd =
-sda sd asd
+name=ogogo mainjob=50000 cashgifts=5666
 
-
-
-
-ad
-
-da
-
-ad
-a
-
-asd 0=asd
+name=anton mainjob=5000 additionaljobs=2000 isresident=true

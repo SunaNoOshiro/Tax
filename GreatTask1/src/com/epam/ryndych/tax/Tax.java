@@ -8,21 +8,21 @@ import java.util.Collections;
 import com.epam.ryndych.Main;
 import com.epam.ryndych.tax.income.*;
 
-public class Tax  implements Serializable{
+public class Tax implements Serializable {
 
-	public final static float MIN_WAGE = 1218;
-	private ArrayList<Income> listOfIncomes = new ArrayList<Income>();
+	public final static float MIN_WAGE = 1218;//мінімальна заробітня плата
+	private ArrayList<Income> listOfIncomes = new ArrayList<Income>();//список доходів
 
 	public Tax(ArrayList<Income> listOfIncomes) {
 		Main.LOG.info("Tax create");
 		this.listOfIncomes = listOfIncomes;
 	}
 
-	public int getNumberOfTaxPayments() {
+	public int getNumberOfTaxPayments() {//повертає кількість податків
 		return listOfIncomes.size();
 	}
 
-	public float getSumOfTaxPayments() {
+	public float getSumOfTaxPayments() {//повертає суми податків
 		float sum = 0;
 		for (Income i : listOfIncomes) {
 			sum += i.getObtainTaxAmount();
@@ -35,8 +35,8 @@ public class Tax  implements Serializable{
 		Collections.sort(listOfIncomes, Income.IncomeComparator);
 		String string = "";
 		for (Income i : listOfIncomes) {
-			string += "\t" + i.getIncomeType() + ": tax = "
-					+ i.getObtainTaxAmount() + "\n";
+			string += "\t" + i.getIncomeType() + "=" + i.getProfit()
+					+ ": tax = " + i.getObtainTaxAmount() + "\n";
 		}
 		return string;
 	}

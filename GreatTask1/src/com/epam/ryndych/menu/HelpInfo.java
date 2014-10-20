@@ -31,8 +31,6 @@ public class HelpInfo {
 						+ "\t name=Petro mainJob=4500 cashGifts=5000 isFamily=true\n\n"
 						+ "This means that the taxpayer's name is Petro,\n"
 						+ "his income from the main work is 4500,\n"
-						+ "his income from receiving monye gift from the family is 5000\n"
-						+ "\nExample of wrong input:\n\n"
-						+ "\t name=1564 mainJob=5426grn isFamily=yes\n");
+						+ "his income from receiving monye gift from the family is 5000\n");
 	}
 }

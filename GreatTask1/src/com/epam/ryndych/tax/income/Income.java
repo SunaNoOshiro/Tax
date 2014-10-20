@@ -5,15 +5,19 @@ import java.util.Comparator;
 
 import com.epam.ryndych.tax.Tax;
 
-public abstract class Income implements Comparable<Income>, Comparator<Income>,Serializable {
-	protected float profit = 0;
-	protected float taxRate = 0;
-	protected boolean isResident = true;
+//абстрактний клас доходу
+public abstract class Income implements Comparable<Income>, Comparator<Income>,
+		Serializable {
+	protected float profit = 0;// прибуток
+	protected float taxRate = 0;// податок від прибутку
+	protected boolean isResident = true;// чи є резидентом
 
 	protected void calculateTax() {
 		if (isResident) {
+			// обрахунок для резидента
 			calculateForResident();
 		} else {
+			// обрахунок для нерезидента
 			calculateForNonResident();
 		}
 	}
@@ -29,7 +33,7 @@ public abstract class Income implements Comparable<Income>, Comparator<Income>,S
 			taxRate = profit * 0.15f;
 	}
 
-	abstract public String getIncomeType();
+	abstract public String getIncomeType();// отримати назву типу дохода
 
 	public float getObtainTaxAmount() {
 		return taxRate;
@@ -37,6 +41,7 @@ public abstract class Income implements Comparable<Income>, Comparator<Income>,S
 
 	@Override
 	public int compareTo(Income o) {
+		// порівняння по розміру податку
 		if (taxRate > o.taxRate)
 			return 1;
 		else if (taxRate < o.taxRate)
@@ -47,6 +52,7 @@ public abstract class Income implements Comparable<Income>, Comparator<Income>,S
 
 	@Override
 	public int compare(Income o1, Income o2) {
+		// порівняння по розміру податку
 		if (o1.taxRate > o2.taxRate)
 			return 1;
 		else if (o1.taxRate < o2.taxRate)
@@ -61,4 +67,8 @@ public abstract class Income implements Comparable<Income>, Comparator<Income>,S
 		}
 
 	};
+
+	public float getProfit() {
+		return profit;// повертає прибуток
+	}
 }

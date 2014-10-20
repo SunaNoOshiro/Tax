@@ -1,0 +1,64 @@
+2014-10-20 16:27:10,509 ERROR [main] - com.epam.ryndych.Main.execute 16 - IncomeException
+2014-10-20 16:27:42,244 ERROR [main] - com.epam.ryndych.Main.execute 16 - IncomeException
+2014-10-20 16:28:08,144 ERROR [main] - com.epam.ryndych.Main.execute 16 - IncomeException
+2014-10-20 16:28:25,128 ERROR [main] - com.epam.ryndych.Main.execute 16 - IncomeException
+2014-10-20 20:47:22,527 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:22,558 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:22,558 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:22,558 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:22,558 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:22,558 ERROR [main] - com.epam.ryndych.Main.chackToken 405 - Incorrect input of parameters
+2014-10-20 20:47:22,558 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:22,558 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:22,558 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:22,558 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:22,574 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:22,574 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:31,168 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:31,183 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:31,199 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:31,199 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:31,199 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:31,199 ERROR [main] - com.epam.ryndych.Main.chackToken 405 - Incorrect input of parameters
+2014-10-20 20:47:31,199 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:31,199 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:31,199 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:31,199 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:31,199 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:31,199 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:46,448 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:46,448 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:46,463 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:46,463 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:46,463 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:46,463 ERROR [main] - com.epam.ryndych.Main.chackToken 405 - Incorrect input of parameters
+2014-10-20 20:47:46,463 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:46,463 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:46,463 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:46,463 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:46,463 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:46,463 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:58,342 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.chackToken 405 - Incorrect input of parameters
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:47:58,358 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:49:19,274 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:49:19,289 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:49:19,289 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:49:19,289 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:49:19,289 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:49:19,289 ERROR [main] - com.epam.ryndych.Main.chackToken 405 - Incorrect input of parameters
+2014-10-20 20:49:19,305 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:49:19,305 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:49:19,305 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:49:19,305 ERROR [main] - com.epam.ryndych.Main.createIfHasNotResidentField 127 - IncomeCreateException
+2014-10-20 20:49:19,305 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException
+2014-10-20 20:49:19,305 ERROR [main] - com.epam.ryndych.Main.createIfHasResidentField 181 - IncomeCreateException

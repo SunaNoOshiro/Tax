@@ -1,4 +1,4 @@
-package com.epam.ryndych;
+package com.epam.ryndych.inout;
 
 import java.io.InputStream;
 import java.util.Scanner;
@@ -18,16 +18,11 @@ public class IOWrapper {
 	}
 
 	public String nextLine() {
-		//in.nextLine();
 		return in.nextLine();
 	}
 
 	public boolean hasNext() {
 		return in.hasNext();
-	}
-
-	public void parse() {
-
 	}
 
 	public static IOWrapper getInstance() {

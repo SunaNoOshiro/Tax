@@ -27,9 +27,13 @@ public class Taxpayer implements Serializable {
 	public String getName() {
 		return name;
 	}
+
 	@Override
 	public String toString() {
-		return name +":\n" +taxRate.toString();
+		return name + ":\n" + taxRate.toString();
 	}
 
+	public Tax getTax() {
+		return taxRate;
+	}
 }
